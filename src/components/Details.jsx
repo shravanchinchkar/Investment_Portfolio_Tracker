@@ -23,16 +23,16 @@ const Details = ({ item }) => {
   return (
     <>
       <li className="flex text-black bg-orange-400" id={item.id}>
-        <div className="border-[2px] p-[0.5rem] text-center mobile:text-[10px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center   border-black w-[100%] border-r-0 border-l-0 border-t-0">
+        <div className="border-[2px] p-[0.5rem] text-center mobile:text-[10px] mobile-2:text-[11px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center   border-black w-[100%] border-r-0 border-l-0 border-t-0">
           {item.assetname}
         </div>
-        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0 ">
+        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] mobile-2:text-[11px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0 ">
           {item.amountinvested}
         </div>
-        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0">
+        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] mobile-2:text-[11px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0">
           {item.currentamount}
         </div>
-        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0">
+        <div className="border-[2px] p-[0.5rem] mobile:text-[10px] mobile-2:text-[11px] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex justify-center  items-center border-black w-[100%] border-r-0 border-t-0">
           {item.percentchange}%
         </div>
         <div className="border-[2px] p-[0.5rem] sm:text-sm md:text-[1.15rem] lg:text-[1.45rem] xl:text-xl font-semibold uppercase flex gap-[10px] justify-around border-black w-[100%] border-r-0 border-t-0 text-center">

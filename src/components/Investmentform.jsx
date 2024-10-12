@@ -68,29 +68,29 @@ const Investmentform = () => {
     <div
       className={
         value.displayInvestmentForm === true
-          ? "absolute top-0 z-10 sm:w-[100%] sm:h-[280%] md:h-[300%] lg:h-[320%] xl:h-[170%]  flex flex-col justify-center  items-center bg-green-500 bg-opacity-[90%]"
+          ? "absolute top-0 z-10 mobile:w-[100%] mobile:h-[122%] mobile-2:h-[135%] sm:h-[160%] md:h-[300%] lg:h-[320%] xl:h-[170%]  flex flex-col justify-center  items-center bg-green-500 bg-opacity-[90%]"
           : "hidden"
       }
     >
-      <div className="flex flex-col gap-[0.5rem] w-[500px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
+      <div className="flex flex-col gap-[0.5rem] mobile:w-[290px] mobile-2:w-[380px] mobile-3:w-[450px] sm:w-[500px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
         <div className="flex justify-center ">
-          <p className="text-2xl uppercase font-semibold text-yellow-500">
+          <p className="mobile:text-xl sm:text-2xl uppercase font-semibold text-yellow-500">
             Add New Investment
           </p>
         </div>
 
         {/* The form start from here */}
-        <div className="grid grid-cols-[165px] grid-rows-4 gap-[1rem]">
+        <div className="grid mobile:grid-cols-[90px] sm:grid-cols-[165px] grid-rows-4 gap-[1rem]">
           <label
             htmlFor="assetname"
-            className="text-yellow-500 uppercase font-semibold"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:block"
           >
             Asset Name:
           </label>
           <input
             type="text"
             id="assetname"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={assetName}
             placeholder="Enter Asset Name in string"
             onChange={handleAssetName}
@@ -98,36 +98,36 @@ const Investmentform = () => {
 
           <label
             htmlFor="investedamount"
-            className="text-yellow-500 uppercase font-semibold"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl mobile:flex mobile:justify-center mobile:items-center sm:static"
           >
             Amount Invested:
           </label>
           <input
             type="text"
             id="investedamount"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={amountInvested}
-            placeholder="Enter amount invested in numbers"
+            placeholder="Enter invested amount "
             onChange={handleInvestedAmount}
           />
 
           <label
             htmlFor="currentamount"
-            className="text-yellow-500 uppercase font-semibold"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:static"
           >
             Current Value:
           </label>
           <input
             type="text"
             id="currentamount"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+           className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={currentAmount}
-            placeholder="Enter current amount in numbers"
+            placeholder="Enter current"
             onChange={handleCurrentAmount}
           />
 
           <button
-            className="investformbutton justify-self-center col-span-2 mb-[1rem]"
+            className="investformbutton justify-self-center col-span-2 sm:mr-0  mb-[1rem]"
             onClick={addInvestmentFormButton}
           >
             Add Investment

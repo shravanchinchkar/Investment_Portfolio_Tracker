@@ -31,7 +31,7 @@ const PieChart = () => {
   };
 
   return (
-    <div className="piechartbox rounded-bl-lg rounded-tr-lg mobile:w-[250px] sm:w-[500px] sm:h-[500px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] xl:w-[650px] xl:h-[650px] mb-[2rem] flex justify-start items-center gap-[3rem] flex-col  border-orange-400 border-[2px]">
+    <div className="piechartbox rounded-bl-lg rounded-tr-lg mobile:w-[250px] mobile-2:w-[300px] sm:w-[500px] sm:h-[500px] md:w-[550px] md:h-[550px] lg:w-[600px] lg:h-[600px] xl:w-[650px] xl:h-[650px] mb-[2rem] flex justify-start items-center gap-[3rem] flex-col  border-orange-400 border-[2px]">
       <div className="w-[100%] flex justify-center items-center bg-orange-500 h-[50px] font-semibold text-white mobile:text-xl sm:text-2xl uppercase">
         Investment Pie Chart
       </div>

@@ -60,13 +60,13 @@ function App() {
       >
         <div className="parentcontainer relative w-[100vw] h-[100vh]">
           <header>
-            <div className="title text-white mobile:w-[250px] mobile:h-[50px] sm:w-[500px] sm:h-[50px] md:w-[600px] md:h-[65px]  xl:w-[700px] xl:h-[65px] m-auto mt-[0.5rem]">
-              <p className="w-[100%] h-[100%] flex justify-center items-center  text-center font-bold mobile:text-[13px] mobile:font-bold sm:text-2xl md:text-3xl xl:text-4xl uppercase">
+            <div className="title text-white mobile:w-[270px] mobile:h-[50px] mobile-2:w-[350px] sm:w-[500px] sm:h-[50px] md:w-[600px] md:h-[65px]  xl:w-[700px] xl:h-[65px] m-auto mt-[0.5rem]">
+              <p className="w-[100%] h-[100%] flex justify-center items-center  text-center font-bold mobile:text-[14px] mobile:font-bold mobile-2:text-[19px] sm:text-2xl md:text-3xl xl:text-4xl uppercase">
                 Investment Portfolio Tracker
               </p>
             </div>
 
-            <div className="valuetitle mobile:w-[200px] mobile:h-[30px] sm:w-[400px] sm:h-[50px] md:w-[500px] xl:w-[600px] xl:h-[65px] m-auto mt-[1rem] mb-[1rem] mobile:text-[10px] sm:text-xl md:text-2xl xl:text-3xl font-bold text-red-400 uppercase">
+            <div className="valuetitle mobile:w-[230px] mobile:h-[40px] mobile-2:w-[290px] sm:w-[400px] sm:h-[50px] md:w-[500px] xl:w-[600px] xl:h-[65px] m-auto mt-[1rem] mb-[1rem] mobile:text-[13px] mobile-2:text-[17px]  sm:text-xl md:text-2xl xl:text-3xl font-bold text-red-400 uppercase">
 
               <p className="w-[100%] h-[100%] flex gap-[10px] justify-center items-center">
                 Total Portfolio value:- {totalPortfoliValue}
@@ -76,7 +76,7 @@ function App() {
 
           <main className="flex flex-col items-center gap-[1rem]">
             <button
-              className="investmentbutton mobile:w-[170px] mobile:h-[35px] sm:w-[300px] sm:h-[60px] m-auto w-max mt-[1.5rem] mobile:text-[10px]  sm:text-2xl font-bold uppercase"
+              className="investmentbutton mobile:w-[200px] mobile:h-[40px] sm:w-[300px] sm:h-[60px] m-auto w-max mobile:mt-[1rem] sm:mt-[1.5rem] mobile:text-[15px]  sm:text-2xl font-bold uppercase"
               onClick={addInvestmentButton}
             >
               Add Investment
@@ -92,7 +92,7 @@ function App() {
                   No Investment to display
                 </p>
               ) : (
-                <ul className="investtable flex flex-col mobile:w-[85vw] xl:w-[70vw] mb-[1rem] border-[2px] rounded-bl-lg rounded-tr-lg border-black border-b-0">
+                <ul className="investtable flex flex-col mobile:w-[85vw] mobile-2:w-[92vw] xl:w-[70vw] mb-[1rem] border-[2px] rounded-bl-lg rounded-tr-lg border-black border-b-0">
                   <InvestmentTable />
                 </ul>
               )}
