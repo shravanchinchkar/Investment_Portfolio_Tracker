@@ -51,7 +51,7 @@ const Updateinvestmentform = () => {
     <div
       className={
         value.displayUpdateForm === true
-          ? "absolute top-0 z-10 mobile:w-[100%] mobile:h-[122%] mobile-2:h-[135%] sm:h-[160%] md:h-[300%] lg:h-[320%] xl:h-[170%]  flex flex-col justify-center  items-center bg-yellow-500 bg-opacity-[90%]"
+          ? "absolute top-0 z-10 w-[100%] h-[100%] flex flex-col justify-center  items-center bg-yellow-500 bg-opacity-[90%]"
           : "hidden"
       }
     >

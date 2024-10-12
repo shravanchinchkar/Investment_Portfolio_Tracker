@@ -68,11 +68,11 @@ const Investmentform = () => {
     <div
       className={
         value.displayInvestmentForm === true
-          ? "absolute top-0 z-10 mobile:w-[100%] mobile:h-[122%] mobile-2:h-[135%] sm:h-[160%] md:h-[300%] lg:h-[320%] xl:h-[170%]  flex flex-col justify-center  items-center bg-green-500 bg-opacity-[90%]"
+          ? "absolute top-0 z-10 w-[100%] h-[100%] flex flex-col justify-center  items-center bg-green-500 bg-opacity-[90%]"
           : "hidden"
       }
     >
-      <div className="flex flex-col gap-[0.5rem] mobile:w-[290px] mobile-2:w-[380px] mobile-3:w-[450px] sm:w-[500px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
+      <div className="flex flex-col gap-[0.5rem] mobile:w-[290px] mobile-2:w-[380px] mobile-3:w-[450px] sm:w-[600px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
         <div className="flex justify-center ">
           <p className="mobile:text-xl sm:text-2xl uppercase font-semibold text-yellow-500">
             Add New Investment
@@ -80,17 +80,17 @@ const Investmentform = () => {
         </div>
 
         {/* The form start from here */}
-        <div className="grid mobile:grid-cols-[90px] sm:grid-cols-[165px] grid-rows-4 gap-[1rem]">
+        <div className="grid mobile:grid-cols-[90px] sm:grid-cols-[190px] mobile:grid-rows-4 mobile:gap-[1rem]">
           <label
             htmlFor="assetname"
-            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:block"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl mobile:flex mobile:justify-center sm:justify-start mobile:items-center"
           >
             Asset Name:
           </label>
           <input
             type="text"
             id="assetname"
-            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:text-[17px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={assetName}
             placeholder="Enter Asset Name in string"
             onChange={handleAssetName}
@@ -98,14 +98,14 @@ const Investmentform = () => {
 
           <label
             htmlFor="investedamount"
-            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl mobile:flex mobile:justify-center mobile:items-center sm:static"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl mobile:flex mobile:justify-center sm:justify-start mobile:items-center"
           >
             Amount Invested:
           </label>
           <input
             type="text"
             id="investedamount"
-            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:text-xl sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={amountInvested}
             placeholder="Enter invested amount "
             onChange={handleInvestedAmount}
@@ -113,14 +113,14 @@ const Investmentform = () => {
 
           <label
             htmlFor="currentamount"
-            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:static"
+            className="text-yellow-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center sm:justify-start mobile:items-center "
           >
             Current Value:
           </label>
           <input
             type="text"
             id="currentamount"
-           className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:text-xl sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={currentAmount}
             placeholder="Enter current"
             onChange={handleCurrentAmount}

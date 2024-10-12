@@ -6,20 +6,20 @@ import { portfolioContext } from "../context/context";
 
 const PieChart = () => {
   const value = useContext(portfolioContext);
-  let investmentCopy = value.investment;
+  // let investmentCopy = value.investment;
 
   const option = {
     aspectRatio:1
   };
 
   const data = {
-    labels: investmentCopy.map((item)=>{
+    labels: value.investment.map((item)=>{
         return item.assetname
     }),
     datasets: [
       {
         label: "Investment",
-        data: investmentCopy.map((item)=>{
+        data: value.investment.map((item)=>{
             return item.amountinvested
         }),
         backgroundColor: "#F39F0E",
