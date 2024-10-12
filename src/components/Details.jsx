@@ -65,6 +65,7 @@ const Details = ({ item }) => {
             alt="delete"
             className="mobile:block xl:hidden sm:w-[25px] md:w-[30px]"
             id={item.id}
+            onClick={handleDelete}
           />
         </div>
       </li>
