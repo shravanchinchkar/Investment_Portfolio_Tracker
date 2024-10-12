@@ -60,13 +60,13 @@ function App() {
       >
         <div className="parentcontainer relative w-[100vw] h-[100vh]">
           <header>
-            <div className="title text-white mobile:w-[270px] mobile:h-[50px] mobile-2:w-[350px] sm:w-[500px] sm:h-[50px] md:w-[600px] md:h-[65px]  xl:w-[700px] xl:h-[65px] m-auto mt-[0.5rem]">
-              <p className="w-[100%] h-[100%] flex justify-center items-center  text-center font-bold mobile:text-[14px] mobile:font-bold mobile-2:text-[19px] sm:text-2xl md:text-3xl xl:text-4xl uppercase">
+            <div className="title text-white mobile:w-[270px] mobile:h-[50px] mobile-2:w-[350px] mobile-3:w-[450px] sm:w-[500px] sm:h-[50px] md:w-[600px] md:h-[65px]  xl:w-[700px] xl:h-[65px] m-auto mt-[0.5rem]">
+              <p className="w-[100%] h-[100%] flex justify-center items-center  text-center font-bold mobile:text-[14px] mobile:font-bold mobile-2:text-[19px] mobile-3:text-2xl sm:text-2xl md:text-3xl xl:text-4xl uppercase">
                 Investment Portfolio Tracker
               </p>
             </div>
 
-            <div className="valuetitle mobile:w-[230px] mobile:h-[40px] mobile-2:w-[290px] sm:w-[400px] sm:h-[50px] md:w-[500px] xl:w-[600px] xl:h-[65px] m-auto mt-[1rem] mb-[1rem] mobile:text-[13px] mobile-2:text-[17px]  sm:text-xl md:text-2xl xl:text-3xl font-bold text-red-400 uppercase">
+            <div className="valuetitle mobile:w-[230px] mobile:h-[40px] mobile-2:w-[290px] mobile-3:w-[340px] mobile-3:h-[50px] sm:w-[400px] sm:h-[50px] md:w-[500px] xl:w-[600px] xl:h-[65px] m-auto mt-[1rem] mb-[1rem] mobile:text-[13px] mobile-2:text-[17px] mobile-3:text-xl  sm:text-xl md:text-2xl xl:text-3xl font-bold text-red-400 uppercase">
 
               <p className="w-[100%] h-[100%] flex gap-[10px] justify-center items-center">
                 Total Portfolio value:- {totalPortfoliValue}

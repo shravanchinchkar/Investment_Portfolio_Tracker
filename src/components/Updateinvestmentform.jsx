@@ -51,30 +51,30 @@ const Updateinvestmentform = () => {
     <div
       className={
         value.displayUpdateForm === true
-          ? "absolute top-0  z-10 sm:w-[100%] sm:h-[250%] md:h-[270%] lg:h-[280%] xl:h-[170%] flex flex-col justify-center  items-center bg-yellow-500 bg-opacity-[90%]"
+          ? "absolute top-0 z-10 mobile:w-[100%] mobile:h-[122%] mobile-2:h-[135%] sm:h-[160%] md:h-[300%] lg:h-[320%] xl:h-[170%]  flex flex-col justify-center  items-center bg-yellow-500 bg-opacity-[90%]"
           : "hidden"
       }
     >
-      <div className="flex flex-col gap-[0.5rem] w-[500px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
+      <div className="flex flex-col gap-[0.5rem] mobile:w-[290px] mobile-2:w-[380px] mobile-3:w-[450px] sm:w-[500px] m-[4rem] p-[1rem] rounded-lg bg-black text-white">
         <div className="flex justify-center ">
-          <p className="text-2xl uppercase font-semibold text-green-500">
+          <p className="mobile:text-xl sm:text-2xl uppercase font-semibold text-green-500">
             Update Investment
           </p>
         </div>
 
         {/* The form start from here */}
-        <div className="grid grid-cols-[165px] grid-rows-4 gap-[1rem]">
+        <div className="grid mobile:grid-cols-[90px] sm:grid-cols-[165px] grid-rows-4 gap-[1rem]">
           {/* Following input is for assetname */}
           <label
             htmlFor="assetname"
-            className="text-green-500 uppercase font-semibold"
+            className="text-green-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:block"
           >
             Asset Name:
           </label>
           <input
             type="text"
             id="assetname"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={selecteddata === null ? "" : selecteddata.assetname}
             readOnly
           />
@@ -82,14 +82,14 @@ const Updateinvestmentform = () => {
           {/* Following input is for amount Invested */}
           <label
             htmlFor="investedamount"
-            className="text-green-500 uppercase font-semibold"
+            className="text-green-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:block"
           >
             Amount Invested:
           </label>
           <input
             type="text"
             id="investedamount"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={selecteddata === null ? "" : selecteddata.amountinvested}
             readOnly
           />
@@ -97,14 +97,14 @@ const Updateinvestmentform = () => {
           {/* Following input is for Current amount */}
           <label
             htmlFor="currentamount"
-            className="text-green-500 uppercase font-semibold"
+            className="text-green-500 uppercase font-semibold mobile:text-sm sm:text-xl  mobile:flex mobile:justify-center mobile:items-center sm:block"
           >
             Current Value:
           </label>
           <input
             type="text"
             id="currentamount"
-            className=" text-black pl-[10px] pr-[10px] pt-[5px] pb-[5px] border-none outline-none "
+            className=" text-black mobile:text-[12px] mobile:p-[5px] sm:pl-[10px] sm:pr-[10px] sm:pt-[5px] sm:pb-[5px] border-none outline-none "
             value={updatedCurrentAmount}
             onChange={handleUpdateCurrentAmount}
             placeholder="Enter New Current Amount"
