@@ -30,5 +30,4 @@ const InvestmentTable = () => {
     </>
   );
 };
-
 export default memo(InvestmentTable);

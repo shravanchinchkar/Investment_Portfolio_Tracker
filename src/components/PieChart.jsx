@@ -6,8 +6,6 @@ import { portfolioContext } from "../context/context";
 
 const PieChart = () => {
   const value = useContext(portfolioContext);
-  // let investmentCopy = value.investment;
-
   const option = {
     aspectRatio:1
   };

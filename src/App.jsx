@@ -67,7 +67,6 @@ function App() {
             </div>
 
             <div className="valuetitle mobile:w-[230px] mobile:h-[40px] mobile-2:w-[290px] mobile-3:w-[340px] mobile-3:h-[50px] sm:w-[400px] sm:h-[50px] md:w-[500px] xl:w-[600px] xl:h-[65px] m-auto mt-[1rem] mb-[1rem] mobile:text-[13px] mobile-2:text-[17px] mobile-3:text-xl  sm:text-xl md:text-2xl xl:text-3xl font-bold text-red-400 uppercase">
-
               <p className="w-[100%] h-[100%] flex gap-[10px] justify-center items-center">
                 Total Portfolio value:- {totalPortfoliValue}
               </p>
@@ -97,7 +96,13 @@ function App() {
                 </ul>
               )}
             </div>
-            {investment.length===0?<p className="text-white font-semibold text-2xl uppercase">No Visualization to display!</p>:<PieChart />}
+            {investment.length === 0 ? (
+              <p className="text-white font-semibold text-2xl uppercase">
+                No Visualization to display!
+              </p>
+            ) : (
+              <PieChart />
+            )}
           </main>
           <Investmentform />
           <Updateinvestmentform />

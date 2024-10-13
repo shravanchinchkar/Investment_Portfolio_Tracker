@@ -63,7 +63,6 @@ const Investmentform = () => {
       }
     }
   };
-
   return (
     <div
       className={

@@ -5,20 +5,15 @@ import { memo } from "react";
 const Updateinvestmentform = () => {
   const [updatedCurrentAmount, setupdatedCurrentAmount] = useState("")
   const value = useContext(portfolioContext);
-
   const tempid = value.idstate;
-
 
   let data = value.investment.filter((item) => {
     return item.id === tempid;
   });
-
   let selecteddata = data.length > 0 ? data[0] : null;
-
   const handleUpdateCurrentAmount = (e) => {
     setupdatedCurrentAmount(e.target.value)
   };
-
   const handleUpdateButton = () => {
     if (updatedCurrentAmount === "") {
       alert("Please enter the updated current amount");

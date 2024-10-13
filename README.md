@@ -1,8 +1,29 @@
-# React + Vite
+**Project Name:-Investment Portfolio Tracker**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+`About Project`
+```
+This Project consist of list of all the investment of the user.
+The user can Add,Update and delete the investment as per the requirement. 
+The user can see the visualization of the investment which he/she has made in the form of Pie Chart
+```
+`Technologies use`
+```
+The Project is created using Vite+React app
+It includes following technologies:-
+-Html
+-Tailwind Css
+-React
+-React Hooks
+-chart.js javascript library for visualization
+-pnpm which is a node package manager
+```
 
-Currently, two official plugins are available:
+`Command use to run the project`
+```
+pnpm dev
+```
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+`Some More Information`
+```
+The Project is responsive which,it support all the types of screen.
+```
