@@ -58,7 +58,7 @@ function App() {
           setidstate,
         }}
       >
-        <div className="parentcontainer relative w-[100vw] h-max">
+        <div className="parentcontainer relative w-[100vw] min-h-[100vh] h-max ">
           <header>
             <div className="title text-white mobile:w-[270px] mobile:h-[50px] mobile-2:w-[350px] mobile-3:w-[450px] sm:w-[500px] sm:h-[50px] md:w-[600px] md:h-[65px]  xl:w-[700px] xl:h-[65px] m-auto mt-[0.5rem]">
               <p className="w-[100%] h-[100%] flex justify-center items-center  text-center font-bold mobile:text-[14px] mobile:font-bold mobile-2:text-[19px] mobile-3:text-2xl sm:text-2xl md:text-3xl xl:text-4xl uppercase">
